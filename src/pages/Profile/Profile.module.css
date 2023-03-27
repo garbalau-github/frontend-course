@@ -1,0 +1,84 @@
+.ProfileWrapper {
+  display: flex;
+}
+
+.Sidebar {
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  background-image: var(--background-gradient);
+  color: var(--text-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .Sidebar,
+  .RightSidebar {
+    padding: 1rem !important;
+  }
+}
+
+.RightSidebar {
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  right: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  background-image: var(--background-gradient);
+  color: var(--text-color);
+}
+
+.Content {
+  background-color: var(--background-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Text {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.SkillsWrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-color);
+}
+
+.SkillCard {
+  height: 50vh;
+  width: 70vh;
+  border-radius: 20px;
+  box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  background-color: var(--accent-color);
+}
+
+.SkillTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+  background-image: var(--background-gradient);
+  border-radius: 15px;
+  font-size: 4rem;
+}
+
+.SkillTitle h3 {
+  font-size: 5vh;
+}
+
+.SkillTitle p {
+  font-size: 3vh;
+}
